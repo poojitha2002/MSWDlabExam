@@ -1,0 +1,26 @@
+<body>
+<div style="text-align:center">
+<h1>
+  {{title}}
+
+</h1>
+<span class="success">
+<label for="input1" color:white>Enter the first number :</label>
+<input type="number" name="input1" [(ngModel)]="input1">
+<label for="input2">Enter the second number :</label>
+<input type="number" name="input2" [(ngModel)]="input2">
+</span>
+ <br> <br>
+ 
+ <button mat-flat-button color="primary" (click)="add()">ADD</button>
+ <button mat-flat-button color="primary" (click)="subtract()">SUBTRACT</button>
+ <button mat-flat-button color="primary" (click)="mul()">MULTIPLY</button>
+ <button mat-flat-button color="primary" (click)="div()">DIVIDE</button>
+ <button mat-flat-button color="primary" (click)="add()">HISTORY</button>
+
+<h3>Result: {{input3}}</h3>
+<hr>
+<p> Use this calculator for addition, subtraction, multiplication and subtraction</p>
+</div>
+</body>
+<router-outlet></router-outlet>
